@@ -1,1679 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <!-- ===== META TAGS – SEO & Google Requirements ===== -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-  <!-- Primary SEO -->
-  <title>Wafadar Tobacco – Premium Naswar Brands & Tobacco Products</title>
-  <meta name="description" content="Wafadar Tobacco offers a trusted range of premium naswar and tobacco products. Explore our brands, product varieties, and distribution inquiries." />
-  <meta name="keywords" content="Wafadar Tobacco, naswar, tobacco products, naswar brands, tobacco company Pakistan" />
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="Wafadar Tobacco" />
-  <link rel="canonical" href="https://www.wafadartobacco.com/" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.wafadartobacco.com/" />
-  <meta property="og:title" content="Wafadar Tobacco – Premium Naswar Brands & Tobacco Products" />
-  <meta property="og:description" content="Wafadar Tobacco offers a trusted range of premium naswar and tobacco products." />
-  <meta property="og:image" content="https://www.wafadartobacco.com/og-image.jpg" />
-  <meta property="og:locale" content="en_PK" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Wafadar Tobacco – Premium Naswar Brands" />
-  <meta name="twitter:description" content="Explore Wafadar Tobacco's premium naswar brands, product varieties, and business information." />
-  <meta name="twitter:image" content="https://www.wafadartobacco.com/og-image.jpg" />
-
-  <!-- Google Fonts: DM Serif Display + Manrope -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-
-  <!-- Google AdSense (replace Publisher ID) -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script>
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Wafadar Tobacco",
-    "url": "https://www.wafadartobacco.com",
-    "logo": "https://www.wafadartobacco.com/logo.png",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "Customer Support",
-      "availableLanguage": ["English", "Urdu"]
-    }
-  }
-  </script>
-
-  <style>
-    /* ============================================================
-       DESIGN TOKENS — Soft Earthy Premium
-    ============================================================ */
-    :root {
-      /* Backgrounds */
-      --bg-base:       #f7f3ee;   /* warm ivory */
-      --bg-section:    #efe9e0;   /* slightly deeper ivory */
-      --bg-card:       #faf7f3;   /* lightest ivory */
-      --bg-dark:       #3b3429;   /* deep warm brown – footer */
-
-      /* Primary Palette */
-      --sage:          #7d9b76;   /* sage green */
-      --sage-light:    #a4bc9e;
-      --sage-dark:     #5a7554;
-      --terracotta:    #c4704f;   /* muted terracotta */
-      --terracotta-lt: #e09e85;
-      --olive:         #8a8a4a;   /* soft olive */
-      --olive-lt:      #b3b36b;
-
-      /* Text */
-      --text-primary:  #2e2820;   /* near-black warm */
-      --text-body:     #5a4e42;
-      --text-muted:    #9a8e82;
-      --text-light:    #c4b8ac;
-
-      /* Borders */
-      --border:        #ddd5c8;
-      --border-card:   #e8e0d5;
-
-      /* Accents */
-      --accent:        var(--terracotta);
-      --accent-hover:  #a85a3a;
-
-      /* Shadows */
-      --shadow-sm:  0 2px 8px rgba(62,50,38,.08);
-      --shadow-md:  0 8px 24px rgba(62,50,38,.12);
-      --shadow-lg:  0 20px 48px rgba(62,50,38,.16);
-
-      /* Radius */
-      --radius-sm:  8px;
-      --radius-md:  14px;
-      --radius-lg:  22px;
-
-      /* Transitions */
-      --ease:       cubic-bezier(.25,.46,.45,.94);
-    }
-
-    /* ============================================================
-       RESET & BASE
-    ============================================================ */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; font-size: 16px; }
-
-    body {
-      font-family: 'Manrope', sans-serif;
-      background-color: var(--bg-base);
-      color: var(--text-body);
-      line-height: 1.75;
-      overflow-x: hidden;
-    }
-
-    a { color: inherit; text-decoration: none; }
-    img { max-width: 100%; height: auto; display: block; }
-    ul { list-style: none; }
-
-    /* ============================================================
-       TYPOGRAPHY
-    ============================================================ */
-    h1, h2, h3 {
-      font-family: 'DM Serif Display', serif;
-      color: var(--text-primary);
-      line-height: 1.2;
-    }
-    h4, h5, h6, p, span, a, button, input, textarea, select {
-      font-family: 'Manrope', sans-serif;
-    }
-
-    /* ============================================================
-       UTILITY
-    ============================================================ */
-    .container {
-      width: 90%;
-      max-width: 1180px;
-      margin-inline: auto;
-      padding-block: 90px;
-    }
-
-    .eyebrow {
-      display: inline-block;
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 3.5px;
-      text-transform: uppercase;
-      color: var(--sage-dark);
-      margin-bottom: 14px;
-    }
-
-    .divider {
-      width: 48px;
-      height: 3px;
-      background: linear-gradient(90deg, var(--terracotta), var(--olive-lt));
-      border-radius: 2px;
-      margin-block: 20px;
-    }
-    .divider--center { margin-inline: auto; }
-
-    .text-accent  { color: var(--terracotta); }
-    .text-sage    { color: var(--sage-dark); }
-    .text-center  { text-align: center; }
-    .text-muted   { color: var(--text-muted); }
-
-    .sr-only {
-      position: absolute; width: 1px; height: 1px;
-      padding: 0; margin: -1px; overflow: hidden;
-      clip: rect(0,0,0,0); white-space: nowrap; border: 0;
-    }
-
-    /* ============================================================
-       BUTTON
-    ============================================================ */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 14px 34px;
-      background: var(--terracotta);
-      color: #fff;
-      font-family: 'Manrope', sans-serif;
-      font-weight: 600;
-      font-size: 0.85rem;
-      letter-spacing: 0.8px;
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: background 0.3s var(--ease), transform 0.25s var(--ease), box-shadow 0.3s var(--ease);
-      box-shadow: 0 4px 16px rgba(196,112,79,.3);
-    }
-    .btn:hover {
-      background: var(--accent-hover);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(196,112,79,.35);
-    }
-    .btn--outline {
-      background: transparent;
-      color: var(--terracotta);
-      border: 2px solid var(--terracotta);
-      box-shadow: none;
-    }
-    .btn--outline:hover {
-      background: var(--terracotta);
-      color: #fff;
-    }
-    .btn--sage {
-      background: var(--sage);
-      box-shadow: 0 4px 16px rgba(125,155,118,.3);
-    }
-    .btn--sage:hover { background: var(--sage-dark); }
-
-    /* ============================================================
-       AD SLOT
-    ============================================================ */
-    .ad-slot {
-      width: 100%;
-      min-height: 90px;
-      background: #f0ebe4;
-      border: 1.5px dashed var(--border);
-      border-radius: var(--radius-sm);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--text-light);
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      overflow: hidden;
-    }
-    .ad-slot-rect { min-height: 250px; }
-
-    /* ============================================================
-       SCROLL ANIMATION
-       — elements start visible (no-js fallback), JS adds .will-reveal
-    ============================================================ */
-    .reveal { opacity: 1; transform: none; }
-    .js-ready .reveal {
-      opacity: 0;
-      transform: translateY(28px);
-      transition: opacity 0.65s var(--ease), transform 0.65s var(--ease);
-    }
-    .js-ready .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .reveal-delay-1 { transition-delay: 0.08s; }
-    .reveal-delay-2 { transition-delay: 0.16s; }
-    .reveal-delay-3 { transition-delay: 0.24s; }
-    .reveal-delay-4 { transition-delay: 0.32s; }
-
-    /* ============================================================
-       HEADER & NAV
-    ============================================================ */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(247,243,238,.94);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border-bottom: 1px solid var(--border);
-      transition: box-shadow 0.3s;
-    }
-    header.scrolled { box-shadow: var(--shadow-sm); }
-
-    nav {
-      width: 90%;
-      max-width: 1180px;
-      margin-inline: auto;
-      height: 72px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.45rem;
-      color: var(--text-primary);
-      letter-spacing: 0.5px;
-    }
-    .logo em {
-      font-style: normal;
-      color: var(--terracotta);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 36px;
-      align-items: center;
-    }
-    .nav-links a {
-      font-size: 0.82rem;
-      font-weight: 600;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      transition: color 0.25s;
-    }
-    .nav-links a:hover,
-    .nav-links a.active { color: var(--sage-dark); }
-
-    .nav-cta {
-      padding: 10px 22px;
-      font-size: 0.8rem;
-    }
-
-    /* Hamburger */
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 6px;
-    }
-    .hamburger span {
-      display: block;
-      width: 24px;
-      height: 2px;
-      background: var(--text-primary);
-      border-radius: 2px;
-      transition: all 0.3s var(--ease);
-    }
-    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-    .hamburger.open span:nth-child(2) { opacity: 0; width: 0; }
-    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
-    /* ============================================================
-       HERO
-    ============================================================ */
-    #hero {
-      background-color: var(--bg-section);
-      background-image:
-        radial-gradient(ellipse 70% 60% at 80% 50%, rgba(125,155,118,.13) 0%, transparent 70%),
-        radial-gradient(ellipse 50% 40% at 10% 80%, rgba(196,112,79,.09) 0%, transparent 60%);
-      min-height: 92vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    /* Decorative circles */
-    #hero::before {
-      content: '';
-      position: absolute;
-      width: 560px;
-      height: 560px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(125,155,118,.15) 0%, transparent 70%);
-      right: -120px;
-      top: -100px;
-      pointer-events: none;
-    }
-    #hero::after {
-      content: '';
-      position: absolute;
-      width: 340px;
-      height: 340px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(196,112,79,.1) 0%, transparent 70%);
-      left: -80px;
-      bottom: -80px;
-      pointer-events: none;
-    }
-
-    .hero-inner {
-      width: 90%;
-      max-width: 1180px;
-      margin-inline: auto;
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 56px;
-      align-items: center;
-      padding-block: 100px 80px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .hero-text .tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(125,155,118,.15);
-      color: var(--sage-dark);
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      padding: 7px 16px;
-      border-radius: 50px;
-      margin-bottom: 28px;
-      border: 1px solid rgba(125,155,118,.25);
-    }
-    .hero-text .tag::before {
-      content: '';
-      width: 6px;
-      height: 6px;
-      background: var(--sage);
-      border-radius: 50%;
-    }
-
-    .hero-text h1 {
-      font-size: clamp(2.4rem, 4.5vw, 3.8rem);
-      color: var(--text-primary);
-      margin-bottom: 22px;
-      font-style: italic;
-    }
-    .hero-text h1 span {
-      font-style: normal;
-      color: var(--terracotta);
-      display: block;
-    }
-
-    .hero-text p {
-      font-size: 1.05rem;
-      color: var(--text-muted);
-      max-width: 460px;
-      margin-bottom: 40px;
-      font-weight: 400;
-    }
-
-    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
-
-    /* Hero Visual Card */
-    .hero-visual {
-      position: relative;
-      padding-top: 20px; /* room for badge */
-    }
-    .hero-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-card);
-      border-radius: var(--radius-lg);
-      padding: 36px 32px;
-      box-shadow: var(--shadow-lg);
-      position: relative;
-      overflow: visible; /* let badge show */
-    }
-    .hero-card::after {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 4px;
-      background: linear-gradient(90deg, var(--sage), var(--terracotta), var(--olive-lt));
-      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-    }
-    .hero-card-label {
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--text-light);
-      margin-bottom: 20px;
-    }
-    .hero-card-img {
-      height: 180px;
-      background: linear-gradient(135deg, var(--bg-section) 0%, #e4dbd0 100%);
-      border-radius: var(--radius-md);
-      overflow: hidden;
-      margin-bottom: 20px;
-      font-size: 3.5rem;
-    }
-    .hero-card-title {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.2rem;
-      color: var(--text-primary);
-      margin-bottom: 6px;
-    }
-    .hero-card-sub {
-      font-size: 0.82rem;
-      color: var(--text-muted);
-    }
-    .hero-badge {
-      position: absolute;
-      top: 0;
-      right: 28px;
-      background: var(--terracotta);
-      color: #fff;
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      padding: 7px 16px;
-      border-radius: 50px;
-      box-shadow: 0 4px 12px rgba(196,112,79,.35);
-      z-index: 2;
-    }
-
-    /* Hero Ad */
-    .hero-ad {
-      width: 90%;
-      max-width: 1180px;
-      margin-inline: auto;
-      padding-bottom: 48px;
-    }
-
-    /* ============================================================
-       ABOUT
-    ============================================================ */
-    #about { background: var(--bg-base); }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 64px;
-      align-items: center;
-    }
-
-    .about-img-wrap {
-      position: relative;
-      padding-bottom: 40px; /* room for float card */
-    }
-    .about-float-card {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      background: var(--bg-card);
-      border: 1px solid var(--border-card);
-      border-radius: var(--radius-md);
-      padding: 18px 24px;
-      box-shadow: var(--shadow-md);
-      text-align: center;
-      min-width: 148px;
-    }
-    .about-float-card strong {
-      display: block;
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.8rem;
-      color: var(--terracotta);
-      line-height: 1;
-    }
-    .about-float-card span {
-      font-size: 0.72rem;
-      color: var(--text-muted);
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .about-text h2 {
-      font-size: clamp(2rem, 3.5vw, 2.8rem);
-    }
-    .about-text p {
-      color: var(--text-muted);
-      margin-bottom: 18px;
-      font-size: 0.97rem;
-    }
-
-    .about-stats {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      margin-top: 36px;
-    }
-    .stat-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-card);
-      border-radius: var(--radius-md);
-      padding: 22px 20px;
-      text-align: center;
-      box-shadow: var(--shadow-sm);
-      transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
-    }
-    .stat-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-md);
-    }
-    .stat-card strong {
-      display: block;
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.6rem;
-      color: var(--sage-dark);
-    }
-    .stat-card span {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    /* ============================================================
-       BRANDS
-    ============================================================ */
-    #brands { background: var(--bg-section); }
-
-    .section-header { max-width: 580px; }
-    .section-header h2 { font-size: clamp(2rem, 3.5vw, 2.8rem); }
-    .section-header p { color: var(--text-muted); font-size: 0.97rem; margin-top: 12px; }
-
-    .brands-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 28px;
-      margin-top: 52px;
-    }
-
-    .brand-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-card);
-      border-radius: var(--radius-lg);
-      padding: 36px 32px;
-      box-shadow: var(--shadow-sm);
-      transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease), border-color 0.3s;
-      position: relative;
-      overflow: hidden;
-    }
-    .brand-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, var(--sage), var(--olive-lt));
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform 0.4s var(--ease);
-    }
-    .brand-card:hover {
-      transform: translateY(-8px);
-      box-shadow: var(--shadow-lg);
-      border-color: transparent;
-    }
-    .brand-card:hover::before { transform: scaleX(1); }
-
-    /* ── Brand card image ── */
-    .brand-img {
-      width: 100%;
-      height: 160px;
-      border-radius: var(--radius-md);
-      overflow: hidden;
-      margin-bottom: 22px;
-    }
-    .brand-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.5s var(--ease);
-    }
-    .brand-card:hover .brand-img img { transform: scale(1.06); }
-
-    /* ── About image ── */
-    .about-img-box {
-      height: 400px;
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      box-shadow: var(--shadow-md);
-      position: relative;
-    }
-    .about-img-box img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .about-img-box::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(125,155,118,.12) 0%, rgba(196,112,79,.08) 100%);
-      pointer-events: none;
-    }
-    .brand-card h3 {
-      font-size: 1.3rem;
-      color: var(--text-primary);
-      margin-bottom: 10px;
-    }
-    .brand-card p {
-      font-size: 0.88rem;
-      color: var(--text-muted);
-      line-height: 1.7;
-    }
-    .brand-tag {
-      display: inline-block;
-      margin-top: 18px;
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: var(--sage-dark);
-      background: rgba(125,155,118,.12);
-      padding: 5px 12px;
-      border-radius: 50px;
-    }
-
-    .brands-ad { margin-top: 52px; }
-
-    /* ============================================================
-       PRODUCTS
-    ============================================================ */
-    #products { background: var(--bg-base); }
-
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 24px;
-      margin-top: 52px;
-    }
-
-    .product-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-card);
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      box-shadow: var(--shadow-sm);
-      transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
-    }
-    .product-card:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow-lg);
-    }
-    .product-img {
-      height: 210px;
-      position: relative;
-      overflow: hidden;
-      background: var(--bg-section);
-    }
-    .product-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.5s var(--ease);
-    }
-    .product-card:hover .product-img img {
-      transform: scale(1.06);
-    }
-    .product-img::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to bottom, transparent 55%, rgba(46,40,32,.18));
-      pointer-events: none;
-    }
-    .product-info { padding: 22px 20px; }
-    .product-info h3 {
-      font-size: 1.1rem;
-      color: var(--text-primary);
-      margin-bottom: 7px;
-    }
-    .product-info p {
-      font-size: 0.83rem;
-      color: var(--text-muted);
-    }
-    .product-info .product-meta {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: 14px;
-      padding-top: 14px;
-      border-top: 1px solid var(--border-card);
-    }
-    .product-badge {
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 1.2px;
-      text-transform: uppercase;
-      color: var(--terracotta);
-      background: rgba(196,112,79,.1);
-      padding: 4px 10px;
-      border-radius: 50px;
-    }
-
-    /* ============================================================
-       BUSINESS
-    ============================================================ */
-    #business { background: var(--bg-section); }
-
-    .business-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 64px;
-      align-items: start;
-    }
-    .business-text h2 { font-size: clamp(2rem, 3.5vw, 2.8rem); }
-    .business-text p { color: var(--text-muted); margin-bottom: 20px; font-size: 0.97rem; }
-
-    .features-list { margin-bottom: 36px; }
-    .features-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-      padding: 14px 0;
-      border-bottom: 1px solid var(--border);
-      font-size: 0.9rem;
-      color: var(--text-body);
-    }
-    .feat-icon {
-      width: 34px;
-      height: 34px;
-      flex-shrink: 0;
-      background: rgba(125,155,118,.15);
-      border-radius: var(--radius-sm);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.95rem;
-      margin-top: 2px;
-    }
-    .feat-label { font-weight: 600; color: var(--text-primary); font-size: 0.88rem; }
-    .feat-desc  { font-size: 0.8rem; color: var(--text-muted); }
-
-    /* Business visual side */
-    .business-visual {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .biz-highlight {
-      background: var(--bg-card);
-      border: 1px solid var(--border-card);
-      border-radius: var(--radius-md);
-      padding: 28px;
-      box-shadow: var(--shadow-sm);
-      transition: transform 0.3s var(--ease);
-    }
-    .biz-highlight:hover { transform: translateX(6px); }
-    .biz-highlight-icon { font-size: 1.6rem; margin-bottom: 12px; }
-    .biz-highlight h4 {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.1rem;
-      color: var(--text-primary);
-      margin-bottom: 6px;
-    }
-    .biz-highlight p { font-size: 0.83rem; color: var(--text-muted); }
-
-    .business-ad { margin-top: 4px; }
-
-    /* ============================================================
-       CONTACT
-    ============================================================ */
-    #contact { background: var(--bg-base); }
-
-    .contact-wrapper {
-      display: grid;
-      grid-template-columns: 1fr 1.3fr;
-      gap: 56px;
-      margin-top: 52px;
-      align-items: start;
-    }
-
-    .contact-info h3 {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.4rem;
-      color: var(--text-primary);
-      margin-bottom: 16px;
-    }
-    .contact-info p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 28px; }
-
-    .contact-detail {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      padding: 14px 0;
-      border-bottom: 1px solid var(--border);
-    }
-    .contact-detail-icon {
-      width: 40px;
-      height: 40px;
-      flex-shrink: 0;
-      background: rgba(125,155,118,.15);
-      border-radius: var(--radius-sm);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1rem;
-    }
-    .contact-detail-label {
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: var(--text-light);
-      display: block;
-    }
-    .contact-detail-value {
-      font-size: 0.88rem;
-      color: var(--text-primary);
-      font-weight: 600;
-    }
-
-    .contact-notice {
-      margin-top: 28px;
-      padding: 14px 18px;
-      background: rgba(196,112,79,.08);
-      border: 1px solid rgba(196,112,79,.2);
-      border-radius: var(--radius-sm);
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      line-height: 1.5;
-    }
-
-    /* Form */
-    .contact-form {
-      background: var(--bg-card);
-      border: 1px solid var(--border-card);
-      border-radius: var(--radius-lg);
-      padding: 40px 36px;
-      box-shadow: var(--shadow-md);
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-    }
-    .form-group { display: flex; flex-direction: column; gap: 7px; }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-
-    .form-label {
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.8px;
-      text-transform: uppercase;
-      color: var(--text-muted);
-    }
-    .form-input {
-      background: var(--bg-base);
-      border: 1.5px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: 13px 16px;
-      color: var(--text-primary);
-      font-family: 'Manrope', sans-serif;
-      font-size: 0.9rem;
-      transition: border-color 0.25s, box-shadow 0.25s;
-      width: 100%;
-    }
-    .form-input:focus {
-      outline: none;
-      border-color: var(--sage);
-      box-shadow: 0 0 0 3px rgba(125,155,118,.15);
-    }
-    .form-input::placeholder { color: var(--text-light); }
-    select.form-input option { background: var(--bg-card); }
-    textarea.form-input { resize: vertical; min-height: 120px; }
-
-    .form-submit { margin-top: 6px; }
-
-    /* ============================================================
-       FOOTER
-    ============================================================ */
-    footer {
-      background: var(--bg-dark);
-      color: rgba(240,230,210,.7);
-    }
-
-    .footer-inner {
-      width: 90%;
-      max-width: 1180px;
-      margin-inline: auto;
-      padding-block: 64px 40px;
-    }
-
-    .footer-ad { margin-bottom: 48px; }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      gap: 52px;
-      padding-bottom: 48px;
-      border-bottom: 1px solid rgba(255,255,255,.08);
-    }
-    .footer-brand .logo {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.5rem;
-      color: #f0e6d2;
-      display: block;
-      margin-bottom: 18px;
-    }
-    .footer-brand .logo em {
-      font-style: normal;
-      color: var(--terracotta-lt);
-    }
-    .footer-brand p {
-      font-size: 0.85rem;
-      color: rgba(240,230,210,.5);
-      line-height: 1.7;
-      max-width: 280px;
-    }
-
-    .footer-links h4 {
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      color: rgba(240,230,210,.45);
-      margin-bottom: 20px;
-    }
-    .footer-links li + li { margin-top: 12px; }
-    .footer-links a {
-      font-size: 0.85rem;
-      color: rgba(240,230,210,.6);
-      transition: color 0.25s;
-    }
-    .footer-links a:hover { color: var(--terracotta-lt); }
-
-    .footer-bottom {
-      padding-top: 28px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-    .footer-bottom p { font-size: 0.78rem; color: rgba(240,230,210,.3); }
-    .age-notice {
-      font-size: 0.72rem;
-      font-weight: 600;
-      color: rgba(240,230,210,.4);
-      background: rgba(255,255,255,.05);
-      padding: 8px 16px;
-      border-radius: 50px;
-      border: 1px solid rgba(255,255,255,.07);
-    }
-
-    /* ============================================================
-       RESPONSIVE
-    ============================================================ */
-    @media (max-width: 960px) {
-      .hero-inner        { grid-template-columns: 1fr; gap: 40px; padding-block: 72px 56px; }
-      .hero-visual       { display: none; }
-      .about-grid        { grid-template-columns: 1fr; gap: 56px; }
-      .business-grid     { grid-template-columns: 1fr; }
-      .contact-wrapper   { grid-template-columns: 1fr; }
-      .footer-grid       { grid-template-columns: 1fr 1fr; }
-    }
-
-    @media (max-width: 768px) {
-      .container { padding-block: 64px; }
-
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        position: fixed;
-        top: 72px;
-        left: 0;
-        right: 0;
-        background: rgba(247,243,238,.97);
-        backdrop-filter: blur(16px);
-        border-bottom: 1px solid var(--border);
-        padding: 28px 5%;
-        gap: 22px;
-        z-index: 999;
-        box-shadow: var(--shadow-md);
-      }
-      .nav-links.open { display: flex; }
-      .nav-links a { font-size: 0.9rem; }
-      .nav-cta     { width: max-content; }
-      .hamburger   { display: flex; }
-
-      .form-row { grid-template-columns: 1fr; }
-    }
-
-    @media (max-width: 580px) {
-      .about-stats   { grid-template-columns: 1fr 1fr; }
-      .about-img-wrap { padding-bottom: 56px; }
-      .footer-grid   { grid-template-columns: 1fr; }
-      .footer-bottom { flex-direction: column; text-align: center; }
-      .hero-btns     { flex-direction: column; align-items: flex-start; }
-      .contact-form  { padding: 28px 22px; }
-      .brands-grid   { grid-template-columns: 1fr; }
-      .products-grid { grid-template-columns: 1fr 1fr; }
-    }
-
-    @media (max-width: 420px) {
-      .products-grid { grid-template-columns: 1fr; }
-      .about-stats   { grid-template-columns: 1fr; }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PAHARI — Naswar Pouches</title>
+  <meta name="description" content="Discover PAHARI, a contemporary naswar pouch brand with roots in the mountains of Pakistan. Explore our brand story and sample collection.">
+  <meta property="og:title" content="PAHARI — Naswar Pouches">
+  <meta property="og:description" content="Rooted in tradition. A new expression of naswar pouch design.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
 
   <!-- ===== HEADER ===== -->
-  <header id="site-header">
-    <nav aria-label="Main navigation">
-      <a href="#hero" class="logo" aria-label="Wafadar Tobacco Home">Wafadar <em>Tobacco</em></a>
+  <header id="home" class="site-header">
+    <div class="container site-nav">
 
-      <ul class="nav-links" id="nav-links" role="list">
-        <li><a href="#about">About</a></li>
-        <li><a href="#brands">Brands</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#business">Business</a></li>
-        <li><a href="#contact" class="btn nav-cta">Contact Us</a></li>
-      </ul>
+      <!-- Brand Logo -->
+      <a href="#home" class="brand" aria-label="PAHARI home">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m8 3 4 8 5-5 5 15H2L8 3Z" />
+        </svg>
+        <div>
+          <div class="brand-name">PAHARI</div>
+          <div class="brand-caption">ROOTED IN TRADITION</div>
+        </div>
+      </a>
 
-      <button class="hamburger" id="hamburger"
-        aria-label="Toggle navigation menu"
-        aria-expanded="false"
-        aria-controls="nav-links">
-        <span></span><span></span><span></span>
-      </button>
+      <!-- Desktop Nav -->
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#collection">Our collection</a>
+        <a href="#story">Our story</a>
+        <a href="#questions">FAQs</a>
+      </nav>
+
+      <!-- Right side -->
+      <div class="nav-right">
+        <div class="adult-label">
+          <span>18+</span>
+          <div>FOR ADULTS ONLY</div>
+        </div>
+        <button id="menu-toggle" class="button button-ghost button-icon mobile-menu" aria-label="Open menu" aria-controls="mobile-nav" aria-expanded="false">
+          <span class="menu-open-icon">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" /></svg>
+          </span>
+          <span class="menu-close-icon" hidden>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6" /></svg>
+          </span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <nav id="mobile-nav" class="container mobile-nav" aria-label="Mobile navigation" hidden>
+      <a href="#collection">Our collection</a>
+      <a href="#story">Our story</a>
+      <a href="#questions">FAQs</a>
     </nav>
   </header>
 
   <!-- ===== MAIN ===== -->
   <main>
 
-    <!-- ──────────── HERO ──────────── -->
-    <section id="hero" aria-labelledby="hero-heading">
-      <div class="hero-inner">
-
-        <div class="hero-text">
-          <div class="tag">Wafadar Tobacco — Pakistan</div>
-          <!-- Single H1 on the page -->
-          <h1 id="hero-heading">
-            Premium Naswar &amp;<br>
-            <span>Tobacco Products</span>
-          </h1>
-          <p>A dedicated tobacco business focused on quality naswar brands and reliable distribution across the region.</p>
-          <div class="hero-btns">
-            <a href="#brands" class="btn" role="button">Explore Our Brands</a>
-            <a href="#contact" class="btn btn--outline" role="button">Get In Touch</a>
-          </div>
+    <!-- Hero -->
+    <section class="hero" aria-label="PAHARI naswar pouches">
+      <img src="assets/pahari-product.jpg" class="hero-image" alt="Forest-green naswar pouch tins on mountain stone" width="1536" height="1024" fetchpriority="high" />
+      <div class="container hero-content">
+        <div class="eyebrow">From the mountains. For today.</div>
+        <h1>PAHARI<small>Tradition. Reimagined.</small></h1>
+        <p class="hero-description">A familiar heritage. A new expression.<br />Discover naswar pouches inspired by our roots,<br />with a distinctly modern identity.</p>
+        <div class="hero-actions">
+          <a class="button hero-button" href="#collection">Explore the collection
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-7-7 7 7-7 7" /></svg>
+          </a>
+          <a class="story-link" href="#story">Our story
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m-7-7 7 7 7-7" /></svg>
+          </a>
         </div>
-
-        <div class="hero-visual" aria-hidden="true">
-          <div class="hero-badge">Premium Quality</div>
-          <div class="hero-card">
-            <p class="hero-card-label">Featured Product</p>
-            <div class="hero-card-img">
-              <img
-                src="https://images.unsplash.com/photo-1587049352851-8d4e89133924?w=600&q=80&fit=crop&crop=top"
-                alt="Wafadar Naswar Collection"
-                style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);"
-              />
-            </div>
-            <p class="hero-card-title">Wafadar Naswar Collection</p>
-            <p class="hero-card-sub">Carefully crafted. Trusted by distributors.</p>
-          </div>
-        </div>
-
       </div>
+      <div class="container hero-bottom">
+        <span>NASWAR POUCHES · PAKISTANI ROOTS</span>
+        <span>SCROLL TO DISCOVER ↓</span>
+      </div>
+    </section>
 
-      <!-- Google Ad – Hero Banner -->
-      <div class="hero-ad" aria-label="Advertisement">
-        <div class="ad-slot ad-slot-banner">
-          <!-- AdSense unit: replace with <ins class="adsbygoogle" ...></ins> -->
-          <span>Advertisement</span>
+    <!-- Brand Strip -->
+    <div class="container brand-strip">
+      <div class="strip-item">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 3 4 8 5-5 5 15H2L8 3Z" /></svg>
+        <span>Inspired by our roots</span>
+      </div>
+      <div class="strip-item">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Zm-9 5v10l9 5V13m9-5v5m-4 5 2 2 4-4M7.5 5.5l9 5" /></svg>
+        <span>A considered pouch format</span>
+      </div>
+      <div class="strip-item">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4c-8-2-15 2-15 9a7 7 0 0 0 7 7c7 0 8-9 8-16ZM4 21l11-11" /></svg>
+        <span>A new brand perspective</span>
+      </div>
+    </div>
+
+    <!-- Collection -->
+    <section id="collection" class="container section">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">The collection</div>
+          <h2>One identity. Three expressions.</h2>
+        </div>
+        <p class="section-intro">Meet the PAHARI sample collection.<br />Distinctive character. A shared heritage.</p>
+      </div>
+      <div class="products">
+        <article>
+          <div class="product-visual">
+            <span class="product-label">01 / ORIGINAL</span>
+            <div class="tin" aria-label="PAHARI Original sample pouch tin" role="img">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 3 4 8 5-5 5 15H2L8 3Z" /></svg>
+              <strong>PAHARI</strong>
+              <span>ORIGINAL · NASWAR POUCHES</span>
+            </div>
+          </div>
+          <div class="product-bottom">
+            <div>
+              <h3>Original</h3>
+              <p>The classic expression</p>
+            </div>
+            <button class="button button-outline button-icon" aria-label="View Original details" data-product="0">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-7-7 7 7-7 7" /></svg>
+            </button>
+          </div>
+        </article>
+        <article>
+          <div class="product-visual">
+            <span class="product-label">02 / FRESH MINT</span>
+            <div class="tin tin-mint" aria-label="PAHARI Fresh Mint sample pouch tin" role="img">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 3 4 8 5-5 5 15H2L8 3Z" /></svg>
+              <strong>PAHARI</strong>
+              <span>FRESH MINT · NASWAR POUCHES</span>
+            </div>
+          </div>
+          <div class="product-bottom">
+            <div>
+              <h3>Fresh Mint</h3>
+              <p>A fresh perspective</p>
+            </div>
+            <button class="button button-outline button-icon" aria-label="View Fresh Mint details" data-product="1">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-7-7 7 7-7 7" /></svg>
+            </button>
+          </div>
+        </article>
+        <article>
+          <div class="product-visual">
+            <span class="product-label">03 / DARK</span>
+            <div class="tin tin-dark" aria-label="PAHARI Dark sample pouch tin" role="img">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 3 4 8 5-5 5 15H2L8 3Z" /></svg>
+              <strong>PAHARI</strong>
+              <span>DARK · NASWAR POUCHES</span>
+            </div>
+          </div>
+          <div class="product-bottom">
+            <div>
+              <h3>Dark</h3>
+              <p>A deeper character</p>
+            </div>
+            <button class="button button-outline button-icon" aria-label="View Dark details" data-product="2">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-7-7 7 7-7 7" /></svg>
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section id="story" class="story-section">
+      <div class="container section story-layout">
+        <img src="assets/pahari-product.jpg" alt="PAHARI packaging inspired by rugged mountain landscapes" class="story-image" width="1536" height="1024" loading="lazy" />
+        <div class="story-copy">
+          <div class="eyebrow">Our story</div>
+          <h2>Our roots run deep.<br />Our perspective is new.</h2>
+          <p>PAHARI takes its name from the mountains — a quiet tribute to the landscapes, people and traditions that shape our identity.</p>
+          <p>Our vision brings that heritage into a contemporary pouch format. Familiar in spirit. Considered in design. A brand that looks forward without forgetting where it began.</p>
+          <p class="story-sign">Apni mitti. Apni pehchaan.</p>
         </div>
       </div>
     </section>
 
-    <!-- ──────────── ABOUT ──────────── -->
-    <section id="about" aria-labelledby="about-heading">
-      <div class="container">
-        <div class="about-grid">
-
-          <div class="about-img-wrap reveal">
-            <div class="about-img-box">
-              <img
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80&fit=crop&crop=center"
-                onerror="this.style.display='none'; this.parentElement.style.background='var(--bg-section)'"
-                alt="Wafadar Tobacco – premium naswar products"
-                loading="lazy"
-              />
-            </div>
-            <div class="about-float-card">
-              <strong>Premium</strong>
-              <span>Quality Brand</span>
-            </div>
-          </div>
-
-          <div class="about-text reveal reveal-delay-2">
-            <p class="eyebrow">Who We Are</p>
-            <h2 id="about-heading">About <span class="text-accent">Wafadar</span> Tobacco</h2>
-            <div class="divider"></div>
-            <p>Wafadar Tobacco is a tobacco business focused on its portfolio of naswar brands and related products. We aim to provide clear information about our company, product range, and business operations.</p>
-            <p>We are committed to maintaining a professional business presence and building reliable relationships with our business partners and distributors.</p>
-
-            <div class="about-stats" aria-label="Company highlights">
-              <div class="stat-card">
-                <strong>Premium</strong>
-                <span>Quality</span>
-              </div>
-              <div class="stat-card">
-                <strong>Trusted</strong>
-                <span>Portfolio</span>
-              </div>
-              <div class="stat-card">
-                <strong>Wide</strong>
-                <span>Distribution</span>
-              </div>
-              <div class="stat-card">
-                <strong>Reliable</strong>
-                <span>Partner</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
+    <!-- FAQs -->
+    <section id="questions" class="container section faq-layout">
+      <div>
+        <div class="eyebrow">Good to know</div>
+        <h2>A little more<br />about PAHARI.</h2>
+        <p class="section-intro">Clear information. No guesswork.</p>
       </div>
-    </section>
-
-    <!-- ──────────── BRANDS ──────────── -->
-    <section id="brands" aria-labelledby="brands-heading">
-      <div class="container">
-
-        <div class="section-header reveal">
-          <p class="eyebrow">Our Portfolio</p>
-          <h2 id="brands-heading">Our <span class="text-sage">Brands</span></h2>
-          <div class="divider"></div>
-          <p>Explore the brands associated with Wafadar Tobacco — product varieties, packaging, and product information.</p>
-        </div>
-
-        <div class="brands-grid">
-          <article class="brand-card reveal reveal-delay-1">
-            <div class="brand-img">
-              <img
-                src="https://images.unsplash.com/photo-1587049352851-8d4e89133924?w=600&q=80&fit=crop&crop=center"
-                alt="Brand 1 – Naswar product variety"
-                loading="lazy"
-              />
-            </div>
-            <h3>Brand 1</h3>
-            <p>Details about this naswar brand, including product varieties, flavors, and packaging options, will be added here after verification.</p>
-            <span class="brand-tag">Naswar</span>
-          </article>
-          <article class="brand-card reveal reveal-delay-2">
-            <div class="brand-img">
-              <img
-                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80&fit=crop&crop=center"
-                alt="Brand 2 – Naswar product variety"
-                loading="lazy"
-              />
-            </div>
-            <h3>Brand 2</h3>
-            <p>Details about this naswar brand, including product varieties, flavors, and packaging options, will be added here after verification.</p>
-            <span class="brand-tag">Naswar</span>
-          </article>
-          <article class="brand-card reveal reveal-delay-3">
-            <div class="brand-img">
-              <img
-                src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=600&q=80&fit=crop&crop=center"
-                alt="Brand 3 – Naswar product variety"
-                loading="lazy"
-              />
-            </div>
-            <h3>Brand 3</h3>
-            <p>Details about this naswar brand, including product varieties, flavors, and packaging options, will be added here after verification.</p>
-            <span class="brand-tag">Naswar</span>
-          </article>
-        </div>
-
-        <!-- Google Ad – Rectangle between Brands and Products -->
-        <div class="brands-ad reveal" aria-label="Advertisement">
-          <div class="ad-slot ad-slot-rect" style="max-width:728px; margin-inline:auto;">
-            <!-- AdSense unit: replace with <ins class="adsbygoogle" ...></ins> -->
-            <span>Advertisement</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ──────────── PRODUCTS ──────────── -->
-    <section id="products" aria-labelledby="products-heading">
-      <div class="container">
-
-        <div class="section-header reveal">
-          <p class="eyebrow">What We Offer</p>
-          <h2 id="products-heading">Our <span class="text-accent">Products</span></h2>
-          <div class="divider"></div>
-          <p>A curated range of naswar varieties and related tobacco products.</p>
-        </div>
-
-        <div class="products-grid">
-          <!-- Card 1 – Classic Naswar: dry tobacco leaves -->
-          <article class="product-card reveal reveal-delay-1">
-            <div class="product-img">
-              <img
-                src="https://images.unsplash.com/photo-1585237017125-5e4d8e3f9a8b?w=600&q=80&fit=crop&crop=center"
-                onerror="this.parentElement.innerHTML='<div style=\'height:210px;display:flex;align-items:center;justify-content:center;font-size:3rem;background:var(--bg-section)\'>🌿</div>'"
-                alt="Classic Naswar – traditional tobacco product"
-                loading="lazy"
-              />
-            </div>
-            <div class="product-info">
-              <h3>Naswar — Classic</h3>
-              <p>Traditional recipe. Details to be verified and added.</p>
-              <div class="product-meta">
-                <span class="product-badge">Classic</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 2 – Premium Naswar: spices/herbs in wooden bowl -->
-          <article class="product-card reveal reveal-delay-2">
-            <div class="product-img">
-              <img
-                src="https://images.unsplash.com/photo-1615485500704-8e990f9900f7?w=600&q=80&fit=crop&crop=center"
-                onerror="this.parentElement.innerHTML='<div style=\'height:210px;display:flex;align-items:center;justify-content:center;font-size:3rem;background:var(--bg-section)\'>🍃</div>'"
-                alt="Premium Naswar – premium blend product"
-                loading="lazy"
-              />
-            </div>
-            <div class="product-info">
-              <h3>Naswar — Premium</h3>
-              <p>Premium blend. Details to be verified and added.</p>
-              <div class="product-meta">
-                <span class="product-badge">Premium</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 3 – Special Naswar: green herbs close-up -->
-          <article class="product-card reveal reveal-delay-3">
-            <div class="product-img">
-              <img
-                src="https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?w=600&q=80&fit=crop&crop=center"
-                onerror="this.parentElement.innerHTML='<div style=\'height:210px;display:flex;align-items:center;justify-content:center;font-size:3rem;background:var(--bg-section)\'>🌱</div>'"
-                alt="Special Naswar – special variety product"
-                loading="lazy"
-              />
-            </div>
-            <div class="product-info">
-              <h3>Naswar — Special</h3>
-              <p>Special variety. Details to be verified and added.</p>
-              <div class="product-meta">
-                <span class="product-badge">Special</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 4 – Related Product: tobacco leaves raw -->
-          <article class="product-card reveal reveal-delay-4">
-            <div class="product-img">
-              <img
-                src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=600&q=80&fit=crop&crop=center"
-                onerror="this.parentElement.innerHTML='<div style=\'height:210px;display:flex;align-items:center;justify-content:center;font-size:3rem;background:var(--bg-section)\'>🌾</div>'"
-                alt="Related tobacco product"
-                loading="lazy"
-              />
-            </div>
-            <div class="product-info">
-              <h3>Related Product</h3>
-              <p>Additional product details to be verified and added.</p>
-              <div class="product-meta">
-                <span class="product-badge">New</span>
-              </div>
-            </div>
-          </article>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ──────────── BUSINESS ──────────── -->
-    <section id="business" aria-labelledby="business-heading">
-      <div class="container">
-        <div class="business-grid">
-
-          <div class="business-text reveal">
-            <p class="eyebrow">Partnership</p>
-            <h2 id="business-heading">Our <span class="text-sage">Business</span></h2>
-            <div class="divider"></div>
-            <p>We are committed to maintaining a professional business presence and building reliable relationships with our business partners and distributors.</p>
-
-            <ul class="features-list" aria-label="Business features">
-              <li>
-                <div class="feat-icon" aria-hidden="true">📦</div>
-                <div>
-                  <p class="feat-label">Reliable Supply Chain</p>
-                  <p class="feat-desc">Consistent product availability for all distributors.</p>
-                </div>
-              </li>
-              <li>
-                <div class="feat-icon" aria-hidden="true">🤝</div>
-                <div>
-                  <p class="feat-label">Distribution Network</p>
-                  <p class="feat-desc">Professional partnerships across the region.</p>
-                </div>
-              </li>
-              <li>
-                <div class="feat-icon" aria-hidden="true">⭐</div>
-                <div>
-                  <p class="feat-label">Quality Focused</p>
-                  <p class="feat-desc">Each brand in our portfolio meets quality standards.</p>
-                </div>
-              </li>
-              <li>
-                <div class="feat-icon" aria-hidden="true">💬</div>
-                <div>
-                  <p class="feat-label">Dedicated Support</p>
-                  <p class="feat-desc">Responsive business support for all partners.</p>
-                </div>
-              </li>
-            </ul>
-
-            <a href="#contact" class="btn btn--sage">Become a Distributor</a>
-          </div>
-
-          <div class="business-visual reveal reveal-delay-2">
-            <div class="biz-highlight">
-              <div class="biz-highlight-icon">🌱</div>
-              <h4>Quality Brands</h4>
-              <p>A focused portfolio of naswar brands with distinct character and consistent quality.</p>
-            </div>
-            <div class="biz-highlight">
-              <div class="biz-highlight-icon">🗺️</div>
-              <h4>Regional Reach</h4>
-              <p>Serving distributors and business partners across the region with reliable logistics.</p>
-            </div>
-
-            <!-- Google Ad – Business sidebar -->
-            <div class="business-ad" aria-label="Advertisement">
-              <div class="ad-slot ad-slot-rect">
-                <!-- AdSense unit: replace with <ins class="adsbygoogle" ...></ins> -->
-                <span>Advertisement</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ──────────── CONTACT ──────────── -->
-    <section id="contact" aria-labelledby="contact-heading">
-      <div class="container">
-
-        <div class="section-header text-center reveal" style="max-width:600px; margin-inline:auto;">
-          <p class="eyebrow">Get In Touch</p>
-          <h2 id="contact-heading">Contact <span class="text-accent">Us</span></h2>
-          <div class="divider divider--center"></div>
-          <p class="text-muted">For general business inquiries, product information, or distribution-related questions, please contact our team.</p>
-        </div>
-
-        <div class="contact-wrapper">
-
-          <div class="contact-info reveal">
-            <h3>Business Inquiries</h3>
-            <p>Reach out using the form or through our official contact details below. We'll respond as soon as possible.</p>
-
-            <div class="contact-detail">
-              <div class="contact-detail-icon" aria-hidden="true">📧</div>
-              <div>
-                <span class="contact-detail-label">Email</span>
-                <span class="contact-detail-value">wafadartobacco@gmail.com</span>
-              </div>
-            </div>
-            <div class="contact-detail">
-              <div class="contact-detail-icon" aria-hidden="true">📞</div>
-              <div>
-                <span class="contact-detail-label">Phone</span>
-                <span class="contact-detail-value">+92 3000259087</span>
-              </div>
-            </div>
-            <div class="contact-detail">
-              <div class="contact-detail-icon" aria-hidden="true">📍</div>
-              <div>
-                <span class="contact-detail-label">Location</span>
-                <span class="contact-detail-value">Pakistan</span>
-              </div>
-            </div>
-
-            <div class="contact-notice">
-              ⚠️ This website contains information about tobacco products intended for verified business inquiries only.
-            </div>
-          </div>
-
-          <form class="contact-form reveal reveal-delay-2" action="#" method="POST" aria-label="Contact form" novalidate>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name" class="form-label">Your Name <span aria-hidden="true">*</span></label>
-                <input class="form-input" type="text" id="name" name="name" placeholder="Full Name" required autocomplete="name" />
-              </div>
-              <div class="form-group">
-                <label for="email" class="form-label">Email <span aria-hidden="true">*</span></label>
-                <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="phone" class="form-label">Phone</label>
-                <input class="form-input" type="tel" id="phone" name="phone" placeholder="+92 XXX XXX XXXX" autocomplete="tel" />
-              </div>
-              <div class="form-group">
-                <label for="inquiry" class="form-label">Inquiry Type <span aria-hidden="true">*</span></label>
-                <select class="form-input" id="inquiry" name="inquiry" required>
-                  <option value="" disabled selected>Select…</option>
-                  <option value="distribution">Distribution</option>
-                  <option value="product">Product Information</option>
-                  <option value="business">Business Partnership</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="message" class="form-label">Message <span aria-hidden="true">*</span></label>
-              <textarea class="form-input" id="message" name="message" placeholder="Tell us about your inquiry…" required></textarea>
-            </div>
-
-            <div class="form-submit">
-              <button type="submit" class="btn" style="width:100%; justify-content:center;">Send Message</button>
-            </div>
-          </form>
-
-        </div>
+      <div class="faq-list">
+        <details>
+          <summary>What is PAHARI?</summary>
+          <p>PAHARI is a naswar pouch brand rooted in Pakistani mountain culture. The visual identity and collection shown here represent our brand vision.</p>
+        </details>
+        <details>
+          <summary>Who are these products for?</summary>
+          <p>Naswar is a tobacco product intended only for adults of legal tobacco-use age. Tobacco and nicotine are addictive and carry serious health risks. This website does not sell tobacco.</p>
+        </details>
+        <details>
+          <summary>Where can I find product information?</summary>
+          <p>Use the arrow beside each product to explore it. For confirmed ingredients, nicotine content, pack sizes and availability, contact us directly.</p>
+        </details>
+        <details>
+          <summary>Can I order from this website?</summary>
+          <p>No. This is a brand presentation, not an online shop. No orders or payments are accepted here.</p>
+        </details>
+        <details>
+          <summary>How can I get in touch?</summary>
+          <p>Reach us at <a href="mailto:wafadartobacco@gmail.com">wafadartobacco@gmail.com</a> or call <a href="tel:+923000259087">+92 300 025 9087</a>.</p>
+        </details>
       </div>
     </section>
 
   </main>
 
   <!-- ===== FOOTER ===== -->
-  <footer>
-    <div class="footer-inner">
+  <footer class="site-footer">
 
-      <!-- Google Ad – Footer Banner -->
-      <div class="footer-ad" aria-label="Advertisement">
-        <div class="ad-slot ad-slot-banner" style="background:rgba(255,255,255,.04); border-color:rgba(255,255,255,.08); color:rgba(255,255,255,.2);">
-          <!-- AdSense unit: replace with <ins class="adsbygoogle" ...></ins> -->
-          <span>Advertisement</span>
-        </div>
+    <!-- Footer Main -->
+    <div class="container footer-main">
+
+      <!-- Col 1: Brand -->
+      <div class="footer-col footer-brand-col">
+        <a href="#home" class="brand footer-brand" aria-label="PAHARI home">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m8 3 4 8 5-5 5 15H2L8 3Z" />
+          </svg>
+          <div>
+            <div class="brand-name">PAHARI</div>
+            <div class="brand-caption">ROOTED IN TRADITION</div>
+          </div>
+        </a>
+        <p class="footer-tagline">Rooted in tradition.<br />Designed for a new perspective.</p>
       </div>
 
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <span class="logo">Wafadar <em>Tobacco</em></span>
-          <p>A professional tobacco business focused on quality naswar brands and reliable distribution partnerships.</p>
-        </div>
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#brands">Our Brands</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#business">Business</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-links">
-          <h4>Legal</h4>
-          <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Use</a></li>
-            <li><a href="#">Disclaimer</a></li>
-          </ul>
-        </div>
+      <!-- Col 2: Navigation -->
+      <div class="footer-col">
+        <div class="footer-col-title">Navigate</div>
+        <ul class="footer-nav">
+          <li><a href="#collection">Our collection</a></li>
+          <li><a href="#story">Our story</a></li>
+          <li><a href="#questions">FAQs</a></li>
+        </ul>
       </div>
 
-      <div class="footer-bottom">
-        <p>&copy; <span id="year"></span> Wafadar Tobacco. All rights reserved.</p>
-        <p class="age-notice">⚠️ 18+ Only — Tobacco products are harmful to health.</p>
+      <!-- Col 3: Contact -->
+      <div class="footer-col">
+        <div class="footer-col-title">Contact</div>
+        <ul class="footer-contact">
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:wafadartobacco@gmail.com">wafadartobacco@gmail.com</a>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.72a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+923000259087">+92 300 025 9087</a>
+          </li>
+        </ul>
       </div>
 
     </div>
+
+    <!-- Footer Bottom -->
+    <div class="container footer-bottom">
+      <span>© 2026 PAHARI. All rights reserved.</span>
+      <span class="footer-adults">ADULTS ONLY · 18+</span>
+      <span>NOT FOR SALE ON THIS WEBSITE</span>
+    </div>
+
+    <!-- Warning Bar -->
+    <div class="warning container">
+      WARNING: Tobacco is harmful to health. Nicotine is addictive.
+    </div>
+
   </footer>
 
-  <!-- ===== JAVASCRIPT ===== -->
-  <script>
-    'use strict';
-
-    /* ── Add js-ready so reveal CSS activates (no-JS fallback: content stays visible) ── */
-    document.documentElement.classList.add('js-ready');
-
-    /* ── Dynamic year ── */
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    /* ── Header shadow on scroll ── */
-    const siteHeader = document.getElementById('site-header');
-    window.addEventListener('scroll', function () {
-      siteHeader.classList.toggle('scrolled', window.scrollY > 10);
-    }, { passive: true });
-
-    /* ── Mobile Nav ── */
-    const hamburger = document.getElementById('hamburger');
-    const navLinks  = document.getElementById('nav-links');
-
-    hamburger.addEventListener('click', function () {
-      const isOpen = navLinks.classList.toggle('open');
-      hamburger.classList.toggle('open', isOpen);
-      hamburger.setAttribute('aria-expanded', String(isOpen));
-    });
-
-    navLinks.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        navLinks.classList.remove('open');
-        hamburger.classList.remove('open');
-        hamburger.setAttribute('aria-expanded', 'false');
-      });
-    });
-
-    document.addEventListener('click', function (e) {
-      if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
-        navLinks.classList.remove('open');
-        hamburger.classList.remove('open');
-        hamburger.setAttribute('aria-expanded', 'false');
-      }
-    });
-
-    /* ── Active nav link on scroll ── */
-    const sections   = document.querySelectorAll('main section[id]');
-    const navAnchors = navLinks.querySelectorAll('a[href^="#"]');
-
-    function updateActiveNav() {
-      let current = '';
-      sections.forEach(function (sec) {
-        if (window.scrollY >= sec.offsetTop - 110) {
-          current = sec.getAttribute('id');
-        }
-      });
-      navAnchors.forEach(function (a) {
-        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
-      });
-    }
-    window.addEventListener('scroll', updateActiveNav, { passive: true });
-    updateActiveNav();
-
-    /* ── Scroll-reveal (IntersectionObserver) ── */
-    const revealEls = document.querySelectorAll('.reveal');
-
-    if ('IntersectionObserver' in window) {
-      const io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            io.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
-
-      revealEls.forEach(function (el) { io.observe(el); });
-    } else {
-      /* Fallback for old browsers */
-      revealEls.forEach(function (el) { el.classList.add('visible'); });
-    }
-
-    /* ── Contact Form Validation ── */
-    const form = document.querySelector('.contact-form');
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      const name    = form.querySelector('#name').value.trim();
-      const email   = form.querySelector('#email').value.trim();
-      const message = form.querySelector('#message').value.trim();
-      const inquiry = form.querySelector('#inquiry').value;
-
-      if (!name || !email || !message || !inquiry) {
-        showFormError('Please fill in all required fields.');
-        return;
-      }
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        showFormError('Please enter a valid email address.');
-        return;
-      }
-
-      form.style.transition = 'opacity 0.4s';
-      form.style.opacity    = '0';
-      setTimeout(function () {
-        form.innerHTML =
-          '<div style="padding:52px 24px; text-align:center;">' +
-            '<div style="font-size:2.8rem; margin-bottom:16px;">✅</div>' +
-            '<p style="font-family:\'DM Serif Display\',serif; font-size:1.5rem; color:var(--text-primary); margin-bottom:10px;">Thank you!</p>' +
-            '<p style="font-size:0.9rem; color:var(--text-muted);">We\'ll get back to you shortly.</p>' +
-          '</div>';
-        form.style.opacity = '1';
-      }, 400);
-    });
-
-    function showFormError(msg) {
-      let err = form.querySelector('.form-error');
-      if (!err) {
-        err = document.createElement('p');
-        err.className = 'form-error';
-        err.style.cssText = 'color:var(--terracotta);font-size:0.83rem;font-weight:600;margin-top:-4px;';
-        form.insertBefore(err, form.lastElementChild);
-      }
-      err.textContent = msg;
-    }
-
-    /* ── Init AdSense (uncomment after adding ad units) ── */
-    // (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
+  <!-- Product Modal -->
+  <div id="product-modal" class="product-modal" hidden>
+    <div class="modal-body" role="dialog" aria-modal="true" aria-labelledby="product-title">
+      <button id="modal-close" class="button button-ghost button-icon modal-close" aria-label="Close product details">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6" /></svg>
+      </button>
+      <div id="modal-tin"></div>
+      <div class="eyebrow">Sample collection</div>
+      <h2 id="product-title"></h2>
+      <p id="product-description"></p>
+      <button id="modal-back" class="button button-outline">Back to collection
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-7-7 7 7-7 7" /></svg>
+      </button>
+    </div>
+  </div>
 
 </body>
 </html>
