@@ -78,7 +78,7 @@ ul    { list-style: none; margin: 0; padding: 0; }
 /* Brand */
 .brand { display: flex; align-items: center; gap: 10px; }
 .brand svg { width: 36px; height: 33px; color: var(--primary); }
-.brand-name    { font-size: 22px; font-weight: 800; line-height: 1.1; letter-spacing: -.3px; }
+.brand-name    { font-size: 17px; font-weight: 800; line-height: 1.1; letter-spacing: .4px; }
 .brand-caption { font-size: 7.5px; font-weight: 600; letter-spacing: .9px; margin-top: 4px;
                  color: var(--muted-foreground); }
 
@@ -372,7 +372,7 @@ h2 { margin: 15px 0 0; font-size: 39px; font-weight: 500; line-height: 1.25; }
 
   /* ---- Header ---- */
   .site-nav { height: 64px; }
-  .brand-name { font-size: 19px; }
+  .brand-name { font-size: 14px; }
   .brand svg  { width: 28px; height: 26px; }
   .brand-caption { display: none; }
 
