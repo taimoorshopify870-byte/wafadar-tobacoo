@@ -1,4 +1,4 @@
-const products = [{"name": "Original", "className": "", "description": "A signature dark-green design, inspired by the character of traditional naswar. This is a sample product concept; ingredients and specifications are not yet confirmed."}, {"name": "Fresh Mint", "className": "tin-mint", "description": "A mint-green expression of the PAHARI collection. This is a sample product concept; ingredients and specifications are not yet confirmed."}, {"name": "Dark", "className": "tin-dark", "description": "An understated charcoal design for the PAHARI collection. This is a sample product concept; ingredients and specifications are not yet confirmed."}];
+const products = [{"name": "Original", "className": "", "description": "A signature dark-green design, inspired by the character of traditional naswar. This is a sample product concept; ingredients and specifications are not yet confirmed."}, {"name": "Fresh Mint", "className": "tin-mint", "description": "A mint-green expression of the Wafadar Tobacco collection. This is a sample product concept; ingredients and specifications are not yet confirmed."}, {"name": "Dark", "className": "tin-dark", "description": "An understated charcoal design for the Wafadar Tobacco collection. This is a sample product concept; ingredients and specifications are not yet confirmed."}];
 const menuToggle = document.querySelector('#menu-toggle');
 const mobileNav = document.querySelector('#mobile-nav');
 function toggleMenu(open) {
@@ -26,7 +26,7 @@ document.querySelectorAll('[data-product]').forEach(button => {
     previousFocus = button;
     const tin = button.closest('article').querySelector('.tin').cloneNode(true);
     document.querySelector('#modal-tin').replaceChildren(tin);
-    document.querySelector('#product-title').textContent = `PAHARI ${product.name}`;
+    document.querySelector('#product-title').textContent = `WAFADAR TOBACCO ${product.name}`;
     document.querySelector('#product-description').textContent = product.description;
     modal.hidden = false;
     document.body.style.overflow = 'hidden';
